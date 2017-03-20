@@ -19,7 +19,11 @@ function isTyler(name) {
 
 
   //Code Here
+var greeting = "What is your Name?"
 
+function getName(name) {
+	prompt(greeting);
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -59,15 +63,18 @@ function isTyler(name) {
 //Create a function called myName that returns your name
 
   //Code Here
-  
+  function myName() {
+    return "Zac";
+  }  
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+  var newMyName = function myName();
 
 //Now alert the result of invoking newMyName
-
+alert(myNewName());
 
 
 //////////////////PROBLEM 7////////////////////
