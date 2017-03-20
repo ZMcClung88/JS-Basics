@@ -22,7 +22,8 @@ function isTyler(name) {
 var greeting = "What is your Name?"
 
 function getName(name) {
-	prompt(greeting);
+	var name = prompt(greeting);
+  return name;
 }
 
 //////////////////PROBLEM 3////////////////////
@@ -33,7 +34,11 @@ function getName(name) {
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+ functon welcome() {
+  var personName = getName();
+  alert('Welcome, ' + personName);
 
+ }
 
 //////////////////PROBLEM 4////////////////////
 
@@ -43,7 +48,7 @@ function getName(name) {
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+ Parameters re used as placeholdersor arguments that have no value and are mutable. Arguments represent actual values that are entered into there parameter.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -53,7 +58,7 @@ function getName(name) {
 
 
   //Answer Here
-
+falsy values are 0, empty strings, null, undefined, NaN, and false. Use and if statement to check if something is falsy.
 
 
 //////////////////PROBLEM 6////////////////////
