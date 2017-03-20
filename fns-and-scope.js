@@ -76,7 +76,7 @@ falsy values are 0, empty strings, null, undefined, NaN, and false. Use and if s
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-  var newMyName = function myName();
+  var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 alert(myNewName());
@@ -89,9 +89,13 @@ alert(myNewName());
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn() {
+  return function person() {
+    return 'Zac';
+  };
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
